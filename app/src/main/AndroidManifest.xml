@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miniproject">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiniProject">
+        <activity android:name=".ForgetPassword"></activity>
+        <activity android:name=".UpdatePassword" />
+        <activity android:name=".ComplaintsRaisedByUser" />
+        <activity android:name=".DetailsOfRefNo" />
+        <activity android:name=".SearchComplaint" />
+        <activity android:name=".AccountDetails" />
+        <activity android:name=".SolvedCases" />
+        <activity android:name=".FinishComplaint" />
+        <activity android:name=".HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProblemDetails" />
+        <activity android:name=".UnSolvedProblems" />
+        <activity android:name=".AckForRaisingComplaint" />
+        <activity android:name=".RandomDetails" />
+        <activity android:name=".TreeHomePage" />
+        <activity android:name=".WaterHomePage" />
+        <activity android:name=".EbHomePage" />
+        <activity android:name=".AuthoritySignUp" />
+        <activity android:name=".RaiseAnIssue" />
+        <activity android:name=".UserHomePage" />
+        <activity android:name=".UserDetails" />
+        <activity android:name=".SignUpPage" />
+        <activity android:name=".SignInPage" />
+    </application>
+
+</manifest>
